@@ -1,23 +1,58 @@
-body{
-  display: flex;
-  justify-content: center;
+.whole{
   text-align: center;
+  height: 100%;
 }
-table, th, td {
-border: 1px solid black;
-border-collapse: collapse;
-text-align: center;
+header, footer{
+  border: 1px solid black;
+  height: 10%;
+  margin: 15px;
 }
-th, td{
-padding: 2px;
-margin: 1px;
+article{
+  border: 1px solid black;
+  height: 60%;
+  margin-left:15px;
+  margin-right: 15px;
+  padding: 10px;
 }
-tbody>tr.col-1{
-background-color: red;
+main{
+  vertical-align: top;
+  height: 70vh;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;*/
 }
-tbody>tr.col-1>td{
-color: white;
+.whole>header{
+  height: 15vh;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
-.col-1{
-background-color: grey;
+.whole>footer{
+  height: 15vh;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+section{
+  width: 65%;
+}
+section, aside, nav{
+  display: inline-block;
+  vertical-align: top;
+  height: 80%;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 5px;
+}
+nav, aside{
+  width: 15%;
 }
