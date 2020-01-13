@@ -1,3 +1,8 @@
+body{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 table, th, td {
 border: 1px solid black;
 border-collapse: collapse;
@@ -7,12 +12,12 @@ th, td{
 padding: 2px;
 margin: 1px;
 }
-tbody tr:nth-child(even){
-  background-color: rgb(240, 240, 240);
+tbody>tr.col-1{
+background-color: red;
 }
-tbody tr:nth-child(even) td:nth-child(5){
-  background-color: green;
+tbody>tr.col-1>td{
+color: white;
 }
-tbody tr:nth-child(odd) td:nth-child(6){
-  background-color: red;
+.col-1{
+background-color: grey;
 }
