@@ -1,78 +1,50 @@
 *{
+  margin: 0px;
+  font-size: 0;
   box-sizing: border-box;
 }
-.whole{
+.container{
   text-align: center;
-  font-size: 0;
-  background-color: grey;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 30px;
+}
+header{
+  border: 10px solid black;
+  padding: 5px;
+}
+nav{
+  border: 10px solid black;
+  border-top: none;
+  padding: 5px;
 }
 main{
-  height: 55vh;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;*/
+  border: 10px solid black;
+  border-top: none;
 }
-header, footer{
-  border: 3px solid black;  height: 8%;
-  margin: 15px;
-  background-color: white;
-  border-radius: 10px;
-}
-section{
-  width:calc(50% - 4px);
-  margin-left: 6px;
-  margin-right: 6px;
-}
-nav, aside{
-  width:calc(25% - 4px);
-}
-section, aside, nav{
+.left{
+  border-right: 10px solid black;
+  width: 60%;
   display: inline-block;
   vertical-align: top;
-  height: 100%;
-  border-radius: 10px;
-  border: 3px solid black;
-  background-color: white;
+}
+section{
+  height: 150px;
+  border-bottom: 10px solid black;
 }
 article{
-  border: 3px solid black;
-  height: 45%;
-  margin-left:15px;
-  margin-right: 15px;
-  padding: 10px;
-  border-radius: 10px;
+  height: 150px;
 }
-.whole>header{
-  height: 10vh;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin: 0px !important;
+.right{
+  height: 300px;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
 }
-.whole>footer{
-  height: 10vh;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin: 0px !important;
-}
-h1{
-  font-size: 1.75rem;
+footer{
+  border: 10px solid black;
+  border-top: none;
+  padding: 5px;
+
 }
 h3{
-  font-size: 1.25rem;
-}
-span{
-  font-size: 1rem;
-}
-p{
-  font-size: 1rem;
-}
-h2{
-  font-size: 1.5rem;
+  font-size: 25px;
+  margin: 0px;
 }
