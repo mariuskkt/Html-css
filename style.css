@@ -1,13 +1,16 @@
+*{
+  box-sizing: border-box;
+}
 .whole{
   text-align: center;
-  height: 100vh;
+  font-size: 0;
+  background-color: grey;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 30px;
 }
 main{
-  vertical-align: top;
   height: 55vh;
-  border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -17,42 +20,59 @@ main{
   align-items: center;*/
 }
 header, footer{
-  border: 1px solid black;
-  height: 13%;
+  border: 3px solid black;  height: 8%;
   margin: 15px;
+  background-color: white;
+  border-radius: 10px;
 }
 section{
-  width: 65%;
+  width:calc(50% - 4px);
+  margin-left: 6px;
+  margin-right: 6px;
 }
 nav, aside{
-  width: 15%;
+  width:calc(25% - 4px);
 }
 section, aside, nav{
   display: inline-block;
   vertical-align: top;
-  height: 80%;
+  height: 100%;
   border-radius: 10px;
   border: 3px solid black;
-  margin: 5px;
+  background-color: white;
 }
 article{
-  border: 1px solid black;
+  border: 3px solid black;
   height: 45%;
   margin-left:15px;
   margin-right: 15px;
   padding: 10px;
+  border-radius: 10px;
 }
 .whole>header{
   height: 10vh;
   border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
   border-radius: 10px;
+  margin: 0px !important;
 }
 .whole>footer{
   height: 10vh;
   border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
   border-radius: 10px;
+  margin: 0px !important;
+}
+h1{
+  font-size: 1.75rem;
+}
+h3{
+  font-size: 1.25rem;
+}
+span{
+  font-size: 1rem;
+}
+p{
+  font-size: 1rem;
+}
+h2{
+  font-size: 1.5rem;
 }
