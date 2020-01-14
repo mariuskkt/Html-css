@@ -1,22 +1,10 @@
 .whole{
   text-align: center;
-  height: 100%;
-}
-header, footer{
-  border: 1px solid black;
-  height: 10%;
-  margin: 15px;
-}
-article{
-  border: 1px solid black;
-  height: 60%;
-  margin-left:15px;
-  margin-right: 15px;
-  padding: 10px;
+  height: 100vh;
 }
 main{
   vertical-align: top;
-  height: 70vh;
+  height: 55vh;
   border: 3px solid black;
   padding: 10px;
   margin: 10px;
@@ -28,22 +16,16 @@ main{
   justify-content: space-around;
   align-items: center;*/
 }
-.whole>header{
-  height: 15vh;
-  border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-}
-.whole>footer{
-  height: 15vh;
-  border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+header, footer{
+  border: 1px solid black;
+  height: 13%;
+  margin: 15px;
 }
 section{
   width: 65%;
+}
+nav, aside{
+  width: 15%;
 }
 section, aside, nav{
   display: inline-block;
@@ -53,6 +35,24 @@ section, aside, nav{
   border: 3px solid black;
   margin: 5px;
 }
-nav, aside{
-  width: 15%;
+article{
+  border: 1px solid black;
+  height: 45%;
+  margin-left:15px;
+  margin-right: 15px;
+  padding: 10px;
+}
+.whole>header{
+  height: 10vh;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.whole>footer{
+  height: 10vh;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
