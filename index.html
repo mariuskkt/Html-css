@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Kubas</title>
-  </head>
-  <body>
-    <div class="container">
-      <table>
-        <tbody>
-          <tr>
-            <td colspan="2" rowspan="2"></td>
-            <td colspan="4" rowspan="4"></td>
-            <td colspan="2" rowspan="2"></td>
-            <td class="blank"></td>
-          </tr
-          <tr>
-            <td class="blank"></td>
-          </tr>
-          <tr>
-            <td colspan="2" rowspan="2"></td>
-            <td colspan="2" rowspan="2"></td>
-            <td  class="blank"></td>
-          </tr>
-          <tr>
-            <td  class="blank"></td>
-          </tr>
-          /*antras
-          <tr>
-            <td colspan="4" rowspan="4"></td>
-            <td colspan="2" rowspan="2"></td>
-            <td></td>
-            <td></td>
-            <td  class="blank"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td  class="blank"></td>
-          </tr>
-          <tr>
-            <td colspan="2" rowspan="2"></td>
-            <td colspan="2" rowspan="2"></td>
-            <td  class="blank"></td>
-          </tr>
-          <tr>
-            <td  class="blank"></td>
-          </tr>
-          <tr>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-            <td  class="blank"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Frond-end Uzduotis</h1>
+    </header>
+    <nav>
+      <a href="#apie_mus">Apie mus</a>
+      <a href="#paslaugos">Paslaugos</a>
+      <a href="#tvarkarastis">Tvarkarastis</a>
+      <a href="#kontaktai">Kontaktai</a>
+    </nav>
+    <main>
+      <div id="apie_mus">
+        <h2>Apie mus</h2>
+        <aside class="left">
+          <img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/students_3.jpg?itok=xwRQjdlZ" alt="student image">
+        </aside>
+        <article class="right">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<br>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </p>
+          <div class="button">
+            <a href="#">Pasirink laika!</a>
+          </div>
+        </article>
+      </div>
+      <div id="paslaugos">
+        <h2>Paslaugos</h2>
+        <section class="left_list">
+          <ul>
+            <li>PHP studijos</li>
+            <li>Front end kursai</li>
+            <li>Ivadas i AI</li>
+            <li>Web dizainas</li>
+            <li>Testavimas</li>
+            <li>SQL ir Data Science</li>
+            <li>Web dizainas</li>
+          </ul>
+        </section>
+        <section class="right_list">
+          <ul>
+            <li>Puslapio privatumo politika</li>
+            <li>Atsiliepimai</li>
+            <li>Lokacijos</li>
+          </ul>
+        </section>
+      </div>
+      <div id="tvarkarastis">
+        <h2>Tvarkarastis</h2>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="3">Laikai</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rugsejo 5 2019</td>
+              <td>15:30</td>
+              <td><a href="#">Uzsiregistruoti</a></td>
+            </tr>
+            <tr>
+              <td>Lapkricio 10 2019</td>
+              <td>16:30</td>
+              <td><a href="#">Uzsiregistruoti</a></td>
+            </tr>
+            <tr>
+              <td>Gruodzio 15 2019</td>
+              <td>15:30</td>
+              <td><a href="#">Uzsiregistruoti</a></td>
+            </tr>
+            <tr>
+              <td>Balandzio 20 2019</td>
+              <td>16:30</td>
+              <td><a href="#">Uzsiregistruoti</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="kontaktai">
+        <h2>Kontaktai</h2>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcnet2.cbsistatic.com%2Fimg%2FiepPvrALyFGVxslvrj1LaOYU6ts%3D%2F770x433%2F2013%2F07%2F10%2Ff0bcef02-67c2-11e3-a665-14feb5ca9861%2Fmaps_routemap.png&f=1&nofb=1" alt="World map">
+      </div>
+    </main>
+  </div>
+  <footer><span>Copyright 2019</span></footer>
+</body>
 </html>

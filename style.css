@@ -1,44 +1,135 @@
 *{
   margin: 0px;
-  font-size: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+body{
+  background-color: black;
 }
 .container{
-  display: flex;
-  justify-content: center;
+  width: 1024px;
+  margin: 0 auto;
+  background-color: white;
 }
-td{
-  height: 40px;
-  width: 40px;
+header{
+  padding-top: 100px;
+  background-color: purple;
 }
-td:not(.blank){
+nav{
+  background-color: purple;
+  padding: 25px 0px 5px 0px;
+}
+nav a, h1{
+    text-decoration: none;
+    color: white;
+}
+nav a{
+  padding: 0 20px 0 20px;
+}
+footer{
+  padding: 20px 0px 20px 0px;
+  color: grey;
+}
+
+#apie_mus{
+  padding: 60px 0px 60px 0px;
+  border-bottom: 2px solid black;
+}
+.left img{
+  height: 100%;
+  width: 100%;
+}
+.left{
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+.right{
+  padding-left: 10px;
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
+.left, .right{
+  padding-top:30px;
+}
+.button a{
+  margin-top:20px;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+}
+#paslaugos{
+  padding-top: 70px;
+  border-bottom: 2px solid black;
+  padding-bottom: 60px;
+}
+#paslaugos li{
+  list-style-type:circle;
+}
+.left_list li{
+  text-align: left;
+}
+.right_list li{
+  text-align: left;
+}
+.right_list{
+  vertical-align: top;
+}
+
+.left_list, .right_list{
+  display: inline-block;
+  vertical-align: center;
+  width: calc(50% - 20px);
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  height: 150px;
+}
+#tvarkarastis{
+  padding: 70px 15px 60px 15px;
+  border-bottom: 2px solid black;
+  padding-bottom: 60px;
+}
+table{
+position: relative;
+    margin: 10px auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    text-align: center;}
+table, td, tr{
+  border: 1px solid black;
+  margin-top:30px;
+}
+thead{
+  background-color: orange;
+}
+thead td{
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  font-size: 30px;
+  font-weight:bold;
+  color:white;
+}
+td, tr{
+  padding: 15px 0 15px 0;
+}
+tbody tr:nth-child(odd){
+  background-color: grey;
+}
+#kontaktai{
+  padding: 0px 15px 50px 15px;
+}
+#kontaktai img{
+  width: 100%;
   border: 2px solid black;
 }
-/*pirma puse*/
-tbody tr:nth-child(1) td:nth-child(1){
-  background-color: green;}
-tbody tr:nth-child(1) td:nth-child(3){
-  background-color: green;}
-tbody tr:nth-child(3) td:nth-child(1){
-  background-color: green;}
-tbody tr:nth-child(3) td:nth-child(2){
-  background-color: green;}
-tbody tr:nth-child(1) td:nth-child(2){
-  background-color: red;}
-/*antra*/
-tbody tr:nth-child(5) td:nth-child(1){
-  background-color: red;}
-tbody tr:nth-child(5) td:nth-child(2){
-  background-color: green;}
-tbody tr:nth-child(5) td:nth-child(3){
-  background-color: blue;}
-tbody tr:nth-child(5) td:nth-child(4){
-  background-color: blue;}
-tbody tr:nth-child(6) td:nth-child(1){
-  background-color: blue;}
-tbody tr:nth-child(6) td:nth-child(2){
-  background-color: blue;}
-tbody tr:nth-child(7) td:nth-child(1){
-  background-color: green;}
-tbody tr:nth-child(7) td:nth-child(2){
-  background-color: green;}
+#kontaktai h2{
+  padding: 70px 0px 60px 0px;
+}
