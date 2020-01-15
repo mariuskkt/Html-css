@@ -7,16 +7,12 @@
   display: flex;
   justify-content: center;
 }
-tr{
-  border: 2px solid black;
-}
 td{
   height: 40px;
   width: 40px;
-  border: 2px solid black;
 }
-.blank{
-  border: none;
+td:not(.blank){
+  border: 2px solid black;
 }
 /*pirma puse*/
 tbody tr:nth-child(1) td:nth-child(1){
