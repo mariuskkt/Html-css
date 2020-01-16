@@ -26,6 +26,9 @@ nav a, h1{
 nav a{
   padding: 0 20px 0 20px;
 }
+nav a:hover{
+  color: red;
+}
 footer{
   padding: 20px 0px 20px 0px;
   color: grey;
@@ -60,6 +63,9 @@ footer{
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
   display: inline-block;
+}
+.button a:hover{
+  color: red;
 }
 #paslaugos{
   padding-top: 70px;
@@ -119,6 +125,12 @@ thead td{
 }
 td, tr{
   padding: 15px 0 15px 0;
+}
+td a{
+  color: purple;
+}
+td a:hover{
+  color:red;
 }
 tbody tr:nth-child(odd){
   background-color: grey;
