@@ -7,7 +7,7 @@
   background-color: rgb(219, 190, 180);
 }
 .wrapper{
-  width: 1000px;
+  max-width:1000px;
   margin: 0px auto;
 }
 header{
