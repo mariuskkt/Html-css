@@ -14,7 +14,6 @@ header{
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
-  width: 1024px;
 }
 nav{
   padding-top: 15px;
@@ -23,7 +22,10 @@ nav{
 nav a{
   color: white;
   text-decoration: none;
-  padding: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
+}
+header nav a:not(last-child){
+  margin-right: 0px;
 }
 nav a:hover{
   color: black;
@@ -41,8 +43,7 @@ section.wrapper h2{
 .first img{
   width: 25%;
   float: right;
-  margin-left: 15px;
-  margin-bottom:15px;
+  margin: 0px 0px 15px 15px;
 }
 .title{
   background-color: rgb(245, 245, 245);
@@ -93,7 +94,7 @@ h4{
 }
 .circles{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 30px;
 }
 .circles img{
