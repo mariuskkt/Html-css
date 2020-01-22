@@ -228,7 +228,7 @@ section>a>.material-icons:hover{
   margin-bottom: 50px;
 }
 .wholeCard{
-  width: 30%;
+  width: calc(100%/3 - 20px);
   margin: 40px 20px 40px 0px;
   box-shadow: 6px 13px 18px rgba(0,0,0,0.36);
 }
