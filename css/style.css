@@ -61,6 +61,9 @@ li a{
 .title>h2{
   margin: 30px 0;
 }
+.title>h3{
+  padding: 0px 0;
+}
 .title>h1{
   margin-top: 30px;
 }
@@ -68,7 +71,6 @@ li a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30vh;
   margin-bottom: 10vh;
 }
 .head_main{
@@ -120,6 +122,7 @@ section>a>.material-icons:hover{
 .cards{
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .cardsScnd>.wrapper>.cards{
   display: flex;
@@ -146,6 +149,13 @@ section>a>.material-icons:hover{
  border: 1px solid grey;
  background: white;
  width: 35%;
+}
+.biggerCard>h3{
+  padding: 40px 0;
+  color:rgb(47, 75, 159);
+}
+.smallerCard h3{
+  padding: 25px 0;
 }
 .biggerCard h4{
   color: red;
@@ -281,6 +291,7 @@ h3.lines{
   align-items: center;
   justify-content: space-between;
   margin: 40px 0;
+  text-transform: uppercase;
 }
 h3.lines:before, h3.lines:after{
   content: '';
