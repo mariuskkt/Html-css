@@ -3,37 +3,63 @@
   box-sizing: border-box;
   text-align: left;
 }
+body{
+  background-image: url(https://images.unsplash.com/photo-1558980664-1db506751c6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 form{
-  border: 2px solid black;
-  width: 600px;
-  margin: 0 auto;
-  margin-top:100px;
-  padding: 30px 0;
+  width: 400px;
+  margin: 0 100px 0 0;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(107, 104, 96);
+  box-shadow: 0 0 25px;
 }
-#name input{
-  width: 100%;
+input{
+  border-radius:5px;
+  border-width: 0px;
+  padding: 3px;
 }
-#mail input{
-  width: 100%;
+h1{
+  color: #E3C9A5;
 }
-#name, #mail, #age, #radio, #checkbox, #buttons, #textarea,#selector{
+.full_width input{
+  width: calc(100% - 40px);
+  margin:20px 0;
+}
+.radio label{
+  display: flex;
+  flex-direction: row;
+}
+.radio>label>input{
+  margin-right: 5px;
+}
+.birthday, .radio{
+  margin: 20px 0;
+}
+.birthday input{
+  margin: 20px 0;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+}
+.submit input{
   padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
 }
-#buttons{
-  padding-top: 30px;
-}
-.req{
-  font-size: 10px;
-  color: grey;
-  padding: 0 30px;
-}
-textarea{
-  height:100px;
-  width: 100%;
-  min-height: 100px;
-  max-width: 100%;
-  resize: none;
+.submit input:hover{
+  box-shadow: 0 0 5px 1px #E3C9A5;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color:#E3C9A5;
 }

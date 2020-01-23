@@ -8,140 +8,28 @@
 </head>
 <body>
   <main>
-    <form class="" action="index.html" method="post">
-      <div id="name">
+    <form>
+      <h1>Register</h1>
+      <div class="full_width">
+        <input type="text" name="name" placeholder="Full name">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="password" name="password" placeholder="Create a password">
+      </div>
+      <div class="radio">
         <label>
-          <span>First name*: </span>
-          <input type="text" name="first name" value="" placeholder="Name" required>
-          <span>Last name*: </span>
-          <input type="text" name="last name" value="" placeholder="Surname" required>
+          <p>Male:</p>
+          <input type="radio" name="gender">
+          <p>Female:</p>
+          <input type="radio" name="gender">
         </label>
       </div>
-      <div id="mail">
-        <label>
-          <span>Email: </span>
-          <input type="email" name="email"placeholder="email">
-        </label>
-        <label>
-          <span>Password: </span>
-          <input type="password" name="password" placeholder="Your password">
-        </label>
+      <div class="birthday">
+        <p>Enter your birthdate:</p>
+        <input type="date" name="age">
       </div>
-      <div id="age">
-        <label>
-          <span>Age: </span>
-          <input type="number" name="age" min="18" max="35">
-        </label>
+      <div class="submit">
+        <input type="submit" name="submit" >
       </div>
-      <div id="radio">
-        <label>
-          <span>Male: </span>
-          <input type="radio" name="side" value="male">
-          <span>Female:</span>
-          <input type="radio" name="side" value="female" >
-          <span>Trans: </span>
-          <input type="radio" name="side" value="trans">
-          <span>Robot: </span>
-          <input type="radio" name="side" value="robot" >
-        </label>
-      </div>
-      <div id="radio">
-        <label>
-          <span>White: </span>
-          <input type="radio" name="color" value="white">
-          <span>Brown: </span>
-          <input type="radio" name="color" value="brown" >
-        </label>
-      </div>
-      <div id="checkbox">
-        <label>
-          <span>Car: </span>
-          <input type="checkbox" name="" value="car">
-          </label>
-          <label>
-          <span>Bike: </span>
-          <input type="checkbox" name="" value="bike">
-        </label>
-      </div>
-      <div id="selector">
-        <select name="cars">
-          <option value="bmw">BMW</option>
-          <option value="audi">Audi</option>
-        </select>
-      </div>
-      <div id="textarea">
-        <label>Message:
-        <textarea name="message"></textarea>
-        </label>
-      </div>
-      <div id="buttons">
-        <input type="submit" name="submit" value="Send!">
-        <input type="reset" name="reset" value="RESET!">
-      </div>
-      <span class="req">* required fields</span>
-    </form>
-
-    <form class="all" action="index.html" method="post">
-      <label>
-        color
-        <input type="color">
-      </label>
-      <label>
-        date
-        <input type="date">
-      </label>
-      <label>
-        local datetime
-        <input type="datetime-local">
-      </label>
-      <label>
-        file
-        <input type="file">
-      </label>
-      <label>
-        hidden
-        <input type="hidden">
-      </label>
-      <label>
-        image
-        <input type="image">
-      </label>
-      <label>
-        month
-        <input type="month">
-      </label>
-      <label>
-        number
-        <input type="number">
-      </label>
-      <label>
-        range
-        <input type="range">
-      </label>
-      <label>
-        search
-        <input type="search">
-      </label>
-      <label>
-        tel
-        <input type="tel">
-      </label>
-      <label>
-        text
-        <input type="text">
-      </label>
-      <label>
-        time
-        <input type="time">
-      </label>
-      <label>
-        url
-        <input type="url">
-      </label>
-      <label>
-        week
-        <input type="week">
-      </label>
     </form>
   </main>
 </body>
