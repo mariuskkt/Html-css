@@ -7,162 +7,142 @@
   <title>Home</title>
 </head>
 <body>
-  <header>
-    <div class="filter">
-      <div class="wrapper">
-        <nav>
-          <img src="assets/logo.png" alt="">
-          <ul>
-            <li> <a href="#"><i class="material-icons">search</i></a></li>
-            <li><a href="#">demos</a></li>
-            <li><a href="#">features</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">login</a></li>
-          </ul>
-        </nav>
-        <div class="head_main">
-          <img src="assets/logo-large.png" alt="">
-          <section class="title">
-            <h1>Company title</h1>
-            <h2><span>Your #1</span> drug dealer</h2>
-            <h3><span>Wonderful</span> product. <span>New</span> design. Buy Buy Buy!</h3>
-          </section>
-          <section>
-            <a href="#"><i class="material-icons">keyboard_arrow_down</i></a>
-          </section>
-        </div>
-      </div>
-    </div>
-  </header>
   <main>
-    <div class="pricing filter">
-      <div class="wrapper">
-        <h2>Pricing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div class="plans">
-            <h3 class="lines">Plans</h3>
-          <div class="cards">
-            <section class="smallerCard">
-              <h3>Start up</h3>
-              <h4>For begginers</h4>
-            </section>
-            <section class="biggerCard">
-              <h3>Standart</h3>
-              <h4>Our most popular package. Now available for special price.</h4>
-            </section>
-            <section class="smallerCard">
-              <h3>Professional</h3>
-              <h4>For begginers</h4>
-            </section>
-          </div>
-        </div>
+    <form class="" action="index.html" method="post">
+      <div id="name">
+        <label>
+          <span>First name*: </span>
+          <input type="text" name="first name" value="" placeholder="Name" required>
+          <span>Last name*: </span>
+          <input type="text" name="last name" value="" placeholder="Surname" required>
+        </label>
       </div>
-    </div>
-    <div class="cardsScnd filter">
-        <div class="wrapper">
-        <div class="cards">
-          <section class="smallerCard">
-            <li>Basic pages</li>
-            <li>MySQL databases</li>
-            <li>Limited bandwidth</li>
-            <li>Limited storage space</li>
-            <li><h3>25</h3><section class="button"><a href="#">Order</a></section></li>
-          </section>
-          <section class="biggerCard">
-            <li>Basic pages</li>
-            <li>MySQL databases</li>
-            <li>Limited bandwidth</li>
-            <li>Limited storage space</li>
-            <li><h3>50</h3><section class="button"><a href="#">Order</a></section></li>
-          </section>
-          <section class="smallerCard">
-            <li>Basic pages</li>
-            <li>MySQL databases</li>
-            <li>Limited bandwidth</li>
-            <li>Limited storage space</li>
-            <li><h3>45</h3><section class="button"><a href="#">Order</a></section></li>
-          </section>
-        </div>
+      <div id="mail">
+        <label>
+          <span>Email: </span>
+          <input type="email" name="email"placeholder="email">
+        </label>
+        <label>
+          <span>Password: </span>
+          <input type="password" name="password" placeholder="Your password">
+        </label>
       </div>
-    </div>
-    <div class="products filterRev">
-      <div class="wrapper">
-        <h2>Products</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit. Velit aliquet sagittis id consectetur purus. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Auctor urna nunc id cursus metus aliquam. Eu augue ut lectus arcu bibendum at.
-           Vulputate enim nulla aliquet porttitor lacus luctus. Cursus vitae congue mauris rhoncus aenean vel elit. </p>
-        <h3 class="lines">Designs</h3>
-          <div class="cardsBlock">
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Simple design</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Basic design</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Strong design</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Big design</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Flex style</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>Clean style</p>
-            </div>
-            <div class="wholeCard">
-              <section class="picture">
-
-              </section>
-              <p>New style</p>
-            </div>
-          </div>
+      <div id="age">
+        <label>
+          <span>Age: </span>
+          <input type="number" name="age" min="18" max="35">
+        </label>
       </div>
-    </div>
+      <div id="radio">
+        <label>
+          <span>Male: </span>
+          <input type="radio" name="side" value="male">
+          <span>Female:</span>
+          <input type="radio" name="side" value="female" >
+          <span>Trans: </span>
+          <input type="radio" name="side" value="trans">
+          <span>Robot: </span>
+          <input type="radio" name="side" value="robot" >
+        </label>
+      </div>
+      <div id="radio">
+        <label>
+          <span>White: </span>
+          <input type="radio" name="color" value="white">
+          <span>Brown: </span>
+          <input type="radio" name="color" value="brown" >
+        </label>
+      </div>
+      <div id="checkbox">
+        <label>
+          <span>Car: </span>
+          <input type="checkbox" name="" value="car">
+          </label>
+          <label>
+          <span>Bike: </span>
+          <input type="checkbox" name="" value="bike">
+        </label>
+      </div>
+      <div id="selector">
+        <select name="cars">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div id="textarea">
+        <label>Message:
+        <textarea name="message"></textarea>
+        </label>
+      </div>
+      <div id="buttons">
+        <input type="submit" name="submit" value="Send!">
+        <input type="reset" name="reset" value="RESET!">
+      </div>
+      <span class="req">* required fields</span>
+    </form>
+
+    <form class="all" action="index.html" method="post">
+      <label>
+        color
+        <input type="color">
+      </label>
+      <label>
+        date
+        <input type="date">
+      </label>
+      <label>
+        local datetime
+        <input type="datetime-local">
+      </label>
+      <label>
+        file
+        <input type="file">
+      </label>
+      <label>
+        hidden
+        <input type="hidden">
+      </label>
+      <label>
+        image
+        <input type="image">
+      </label>
+      <label>
+        month
+        <input type="month">
+      </label>
+      <label>
+        number
+        <input type="number">
+      </label>
+      <label>
+        range
+        <input type="range">
+      </label>
+      <label>
+        search
+        <input type="search">
+      </label>
+      <label>
+        tel
+        <input type="tel">
+      </label>
+      <label>
+        text
+        <input type="text">
+      </label>
+      <label>
+        time
+        <input type="time">
+      </label>
+      <label>
+        url
+        <input type="url">
+      </label>
+      <label>
+        week
+        <input type="week">
+      </label>
+    </form>
   </main>
-  <footer>
-    <div class="wrapper">
-      <div class="leftFooter">
-        <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">our stories</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-        <p>Copyright 2020 &copy;</li></p>
-      </div>
-      <div class="rightFooter">
-        <ul>
-          <li> <a href="#"><i class="material-icons">cast_connected</i></a></li>
-          <li> <a href="#"><i class="material-icons">web_asset</i></a></li>
-          <li> <a href="#"><i class="material-icons">add_location</i></a></li>
-          <li> <a href="#"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
