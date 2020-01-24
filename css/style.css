@@ -5,7 +5,9 @@
 }
 body{
   height: 100vh;
-  background-color:#626ABF;
+  background-image:linear-gradient(
+      to top right,
+      #6145B7,#6493C7);
 }
 .wrapper{
   width: 900px;
@@ -131,6 +133,7 @@ select{
   border: none;
   margin-bottom: 10px;
   outline: none;
+  color: grey;
 }
 button{
   width: calc(100% - 20px);
