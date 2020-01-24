@@ -4,33 +4,60 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <title>Home</title>
 </head>
 <body>
-  <main>
-    <form>
-      <h1>Register</h1>
-      <div class="full_width">
-        <input type="text" name="name" placeholder="Full name">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="Create a password">
-      </div>
-      <div class="radio">
-        <label>
-          <p>Male:</p>
-          <input type="radio" name="gender">
-          <p>Female:</p>
-          <input type="radio" name="gender">
-        </label>
-      </div>
-      <div class="birthday">
-        <p>Enter your birthdate:</p>
-        <input type="date" name="age">
-      </div>
-      <div class="submit">
-        <input type="submit" name="submit" >
-      </div>
-    </form>
-  </main>
+    <div class="wrapper">
+      <header>
+          <h1>Company title</h1>
+        <nav class="right_header">
+          <li>Home</li>
+          <li>Features</li>
+          <li>Reviews</li>
+          <li>Pricing</li>
+          <li>FAQ</li>
+          <li>Get Strated</li>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <div class="center">
+            <div class="left">
+              <h2><span>C</span>razy company slogan</h2>
+              <p>Wow we are an amazing company working on <span>solutions</span> that are world-leading and <span>win multiple awards</span>. See our prices! </p>
+              <button class="price" type="button" name="price">see pricing</button>
+            </div>
+            <div class="right">
+              <div class="form_main">
+                <h3>Sign up for free</h3>
+                <form class="" action="index.html" method="post">
+                  <section>
+                    <input type="text" name="name" placeholder="Full name">
+                  </section>
+                  <section>
+                    <input type="text" name="" placeholder="Email">
+                  </section>
+                  <section>
+                    <input type="password" name="password" placeholder="Password">
+                  </section>
+                  <section>
+                    <select name="select">
+                      <option selected=selected>Type</option>
+                      <option value="type1">Type one</option>
+                      <option value="type2">Type two</option>
+                    </select>
+                  </section>
+                  <section>
+                    <button type="button" name="register">Register</button>
+                  </section>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+</main>
 </body>
 </html>
