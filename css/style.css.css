@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  margin-top: 0;
+}
+.container{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container:nth-child(odd){
+
+}
+.container:nth-child(even){
+  background: blue;
+}
+.photo{
+  background-image: url(https://www.mundodeportivo.com/r/GODO/MD/p4/Barca/Imagenes/2017/10/18/Recortada/862874330_20171018221134-k2CH-U4321691511290gC-980x554@MundoDeportivo-Web.jpg);
+  background-position:center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+}
+.photo:hover .photo_hover{
+  transition: 0.5s;
+  opacity: 0.7;
+}
+.even:hover{
+  transform: translate(-5%);
+  transition: 0.3s;
+}
+.odd:hover{
+  transform: translate(5%);
+  transition: 0.3s;
+}
+.photo_hover{
+  background-color: red;
+  width: 100%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.even .photo{
+  margin: 0 0 0 15px;
+  background-image: url(https://specials-images.forbesimg.com/imageserve/1126422759/416x416.jpg?background=000000&cropX1=1430&cropX2=2561&cropY1=15&cropY2=1145);
+  background-position:center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.odd{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.even{
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.odd .text_sq{
+  max-width: 70%;
+  position: relative;
+  padding: 30px;
+  border-radius: 30px 30px 30px 0px;
+  background-color: green;
+}
+.even .text_sq{
+  max-width: 70%;
+  position: relative;
+  padding: 30px;
+  border-radius: 30px 30px 0px 30px;
+  background-color: blue;
+}
+p{
+  color: white;
+}
+.odd .sq{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg) translate(-50%);
+  background-color: green;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+.even .sq{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  transform:  translate(50%, -50%) rotate(45deg);
+  background-color: blue;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+}
