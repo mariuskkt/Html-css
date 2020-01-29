@@ -3,109 +3,70 @@
   margin-top: 0;
 }
 .container{
-  display: flex;
-  width: 50%;
+  width: 900px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+.line{
+  margin-top: 10%;
+  background: grey;
+  width: 5px;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  display: flex;
   flex-direction: column;
 }
-.container:nth-child(odd){
-
-}
-.container:nth-child(even){
-  background: blue;
-}
-.photo{
-  background-image: url(https://www.mundodeportivo.com/r/GODO/MD/p4/Barca/Imagenes/2017/10/18/Recortada/862874330_20171018221134-k2CH-U4321691511290gC-980x554@MundoDeportivo-Web.jpg);
-  background-position:center;
-  background-size: cover;
-  height: 80px;
-  width: 80px;
+img{
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
-  margin-right: 15px;
-  position: relative;
+  border: 5px solid grey;
+  margin: 10px;
 }
-.photo:hover .photo_hover{
-  transition: 0.5s;
-  opacity: 0.7;
+h2{
+  margin-bottom: 5px;
 }
-.even:hover{
-  transform: translate(-5%);
-  transition: 0.3s;
-}
-.odd:hover{
-  transform: translate(5%);
-  transition: 0.3s;
-}
-.photo_hover{
-  background-color: red;
-  width: 100%;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin-right: 15px;
-  opacity: 0;
+.empty, .tekstas{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  flex: 1;
 }
-.even .photo{
-  margin: 0 0 0 15px;
-  background-image: url(https://specials-images.forbesimg.com/imageserve/1126422759/416x416.jpg?background=000000&cropX1=1430&cropX2=2561&cropY1=15&cropY2=1145);
-  background-position:center;
-  background-size: cover;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-}
-.odd{
+.row{
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
-.even{
+.tekstas{
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction: column;
+}
+.tekstas:nth-child(odd){
+}
+.row:nth-child(odd){
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.circle{
+  height: 120px;
+  width: 120px;
+  background-color: red;
+  border-radius: 50%;
+  border: 5px solid grey;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 5px;
 }
-.odd .text_sq{
-  max-width: 70%;
-  position: relative;
-  padding: 30px;
-  border-radius: 30px 30px 30px 0px;
-  background-color: green;
-}
-.even .text_sq{
-  max-width: 70%;
-  position: relative;
-  padding: 30px;
-  border-radius: 30px 30px 0px 30px;
-  background-color: blue;
-}
-p{
+span{
   color: white;
-}
-.odd .sq{
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  transform: rotate(45deg) translate(-50%);
-  background-color: green;
-  top: 50%;
-  left: 0;
-  z-index: -1;
-}
-.even .sq{
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  transform:  translate(50%, -50%) rotate(45deg);
-  background-color: blue;
-  top: 50%;
-  right: 0;
-  z-index: -1;
+  font-size: 20px;
+  display: inline-block;
 }
