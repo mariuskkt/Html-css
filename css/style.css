@@ -1,19 +1,74 @@
 *{
   box-sizing: border-box;
+  margin: 0;
 }
-.container{
+header{
+  background: darkred;
+  position: relative;
+  box-shadow:4px 7px 59px 21px rgba(0,0,0,1);
+  z-index: 3;
+}
+img{
+  width:50%;
+  margin: 0 auto;
+}
+header nav{
+  display: none;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+nav li:last-child{
+  margin-right: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+nav li:last-child:hover{
+  color: #B79257;
+  border-color: #B79257;
+  cursor: pointer;
+}
+nav li:last-child:hover a{
+  color: #B79257;
+}
+nav li{
+  list-style-type: none;
+  padding: 20px 25px;
+}
+.search-bar{
+  display: none;
+  width: 90%;
+}
+header .wrapper{
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+.wrapper{
+padding: 0 10px;
+}
+.poster .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+/* burgeris */
 .burger{
-  height: 100px;
-  width:100px;
-  position: relative;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .burger_line{
   position: absolute;
   height: 4px;
-  background: black;
+  background: grey;
   width: 100%;
   border-radius: 20px;
 }
@@ -38,6 +93,198 @@
 }
 .burger:hover .burger_line:nth-child(3){
   transform: rotate(45deg);
-  bottom: 50%;
+  top: 50%;
   transition: 0.5s;
+}
+.poster{
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://eyeteethdotnet.files.wordpress.com/2014/10/the_dorset_gardner_st_brighton_p_maton_03-10-14.jpg);
+  position: relative;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  background: rgba(139, 0, 0, 0.6);
+  padding: 5px;
+}
+/* burgeris end */
+
+/* header pabaiga */
+
+/* main pradzia */
+
+h2{
+  font-size: 16px;
+  color:darkred;
+}
+h2{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+h3{
+  margin: 10px;
+}
+span{
+  color: red;
+  margin-right: 5px;
+}
+.card-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  width:calc(50% - 3px);
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 5px;
+  background-color: darkred;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.card p{
+  margin: 15px 10px;
+}
+.card img{
+  height: 120px;
+  object-fit: scale-down;
+  margin:15px 0;
+}
+.card:nth-child(2n+0){
+  margin-right: 0;
+}
+form input:not(:last-child){
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 4px;
+}
+textarea{
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+input:last-child{
+  background-color: darkred;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  padding: 10px 15px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.map_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form{
+  flex:1;
+}
+.map{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+/* main pabaiga */
+
+
+/* footer pradzia */
+
+footer{
+  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4{
+  padding: 15px 0px;
+  color: white;
+}
+/* footer pabaiga */
+@media (min-width:769px) {
+  img{
+    width: 100px;
+    margin: 0 50px 0 0;
+  }
+  .wrapper .burger{
+    display: none;
+  }
+  header .wrapper{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  header nav{
+    display: block;
+  }
+  header .search-bar{
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .search-bar input{
+    width: 90%;
+    background-color: white;
+    margin-bottom: 0px;
+  }
+  a:last-child:hover{
+    border: none;
+    color: #B79257;
+  }
+  .poster .wrapper{
+    max-width: 1000px;
+    margin: 0  auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  main .wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .card{
+    width: calc(25% - 6px);
+    margin-right: 6px;
+  }
+  .card:nth-child(2n+0){
+    margin-right:6px;
+  }
+  .card:nth-child(4n+0){
+    margin-right: 0;
+  }
+  .card img{
+    height: 300px;
+  }
+  .map_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .map{
+    margin: 0px;
+  }
 }
