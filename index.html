@@ -1,297 +1,227 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Berry Baldai</title>
-  </head>
-  <body class="page">
-    <header class="header">
-
-      <img class="header__logo--image" src="assets/berry-logo.png" alt="">
-      <div class="nav">
-        <ul class="sidebar">
-          <li class="sidebar__li"> <a class="sidebar__li--style" href="#">Home</a></li>
-          <li class="sidebar__li"> <a class="sidebar__li--style" href="#">Products</a></li>
-            <ul class="innerSidebar">
-              <li class="innerSidebar__li"><a class="innerSidebar__li--style" href="#">Tables</a> </li>
-              <li class="innerSidebar__li"><a class="innerSidebar__li--style" href="#">Chairs</a> </li>
-              <li class="innerSidebar__li"><a class="innerSidebar__li--style" href="#">Cupboards</a> </li>
-              <li class="innerSidebar__li"><a class="innerSidebar__li--style" href="#">Utilities</a> </li>
-            </ul>
-          <li class="sidebar__li"> <a class="sidebar__li--style" href="#">Contacts</a></li>
-          <li class="sidebar__li"> <a class="sidebar__li--style" href="#">About</a></li>
-        </ul>
-        <ul class="sidebar sidebar--lower">
-          <li class="sidebar__li"><a class="sidebar__li--style" href="#">Register</a></li>
-          <li class="sidebar__li"><a class="sidebar__li--style" href="#">Login</a></li>
-        </ul>
-      </div>
-      <div class="burger">
-        <div class="burger__line burger__line--one">
-        </div>
-        <div class="burger__line burger__line--two">
-        </div>
-        <div class="burger__line burger__line--three">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Grid</title>
+</head>
+<body class="page">
+  <section class="section section__sticky">
+      <div class="header__top">
+        <div class="burger">
+          <div class="burger__line burger__line--one">
+          </div>
+          <div class="burger__line burger__line--two">
+          </div>
+          <div class="burger__line burger__line--three">
+         </div>
        </div>
+         <a class="logo" href="#"><img class="logo--header" src="https://www.inmedica.lt/static/themes/site/img/logo-min.png" alt="logo"> </a>
+         <ul class="header__ul">
+          <li class="header__li"><a class="header__li--style" href="#">apie mus <i class="material-icons">arrow_drop_down</i></a> </li>
+          <li class="header__li"><a class="header__li--style" href="#">pacientams <i class="material-icons">arrow_drop_down</i></a></li>
+          <li class="header__li"><a class="header__li--style" href="#">apmokėjimas <i class="material-icons">arrow_drop_down</i></a></li>
+          <li class="header__li"><a class="header__li--style" href="#">naujienos <i class="material-icons">arrow_drop_down</i></a></li>
+          <li class="header__li"><a class="header__li--style" href="#">akcijos <i class="material-icons">arrow_drop_down</i></a></li>
+          <li class="header__li"><a class="header__li--style header__li--profilis" href="#"><i class="material-icons">account_circle</i>paciento profilis</a></li>
+         </ul>
+
+        <div class="language">
+          <p class="language--pick">EN</p>
+          <p class="language--pick">LT</p>
+        </div>
       </div>
-    </header>
-    <main class="main">
-      <div class="main__fixed">
-        <a class="main__fixed--button" href="#">Parašyk mums...</a>
+    <div class="header__bottom">
+      <div class="header__bottom--item">
+        <a class="header__bottom--link" href="#"><i class="material-icons">accessibility</i>
+        <p  class="header__bottom--text">gydytojai</p></a>
       </div>
-      <section class="section">
-        <div class="page__inner">
-          <div class="hero">
-            <div class="hero__image">
-              <img class="image--size" src="assets/berry-logo.png" alt="">
+      <div class="header__bottom--item">
+        <a class="header__bottom--link" href="#"><i class="material-icons">accessibility</i>
+        <p  class="header__bottom--text">paslaugos</p></a>
+      </div>
+      <div class="header__bottom--item">
+        <a class="header__bottom--link" href="#"><i class="material-icons">airline_seat_flat</i>
+        <p  class="header__bottom--text">klinikos</p></a>
+      </div>
+      <div class="header__bottom--item">
+        <a class="header__bottom--link" href="#"><i class="material-icons">adjust</i>
+        <p  class="header__bottom--text">registracijos</p></a>
+      </div>
+    </div>
+  </section>
+  <header class="header">
+    <div class="hero">
+      <div class="hero--inner">
+        <a  class="hero__button" href="#">skatyti daugiau <i class="material-icons material-icons--margin">arrow_forward</i></a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+      <div class="main__inner">
+    <section class="section section__services">
+
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">Šeimos medicina</a></p>
+      </div>
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">Odontologija</a></p>
+      </div>
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">Dienos chirurgijos centras</a></p>
+      </div>
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">kraujagyslių chirurgijos</a></p>
+      </div>
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">kardiologija</a></p>
+      </div>
+      <div class="section__services--item">
+        <div class="services__photo-container">
+          <img class="services__photo"src="http://cdn.24.co.za/files/Cms/General/d/7670/dfb245cb68c040a69730f51860c75322.jpg" alt="">
+        </div>
+        <p class="services__text"><a class="services__text--style" href="#">ginekologija</a></p>
+      </div>
+    </section>
+
+    <section class="section section__akcijos">
+      <h3 class="section__akcijos--title">akcijos / naujienos</h3>
+      <div class="line__icon">
+        <h4 class="line__icon--circle">  <i class="material-icons circle__icon">add_circle</i></h4>
+      </div>
+      <div class="akcijos_naujienos">
+        <div class="akcijos_naujienos--akcijos">
+          <a class="akcijos_naujienos--style" href="#">akcijos</a>
+        </div>
+        <div class="akcijos_naujienos--naujienos">
+          <a class="akcijos_naujienos--style" href="#">naujienos</a>
+        </div>
+      </div>
+    </section>
+    <section class="section section__cards">
+
+      <div class="cards__container">
+        <div class="cards__photo">
+            <img class="cards__photo--style" src="https://media.istockphoto.com/photos/confident-female-doctor-at-office-desk-picture-id508387030?k=6&m=508387030&s=612x612&w=0&h=nxBwICODokliIjl5wP6-Hz8Cg7qZQyClIoKLHi3elfQ=" alt="">
+            <div class="cards__photo--filter">
             </div>
-            <h1 class="hero__title">baldai</h1>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="cards__container--text">
+          <h5 class="cards__title">INMEDICA KLINIKOJE SANTARIŠKĖSE IR KLINIKOJE ELITE MEDICALE - NUGAROS MASAŽO ABONEMENTAS (5 VNT.) - TIK 64 EUR!</h5>
+          <div class="cards__title--line"></div>
+          <p class="cards__text">Pasiūlymas galioja Sausio, Vasario, Kovo mėnesiais!</p>
+          <div class="cards__button">
+            <a  class="hero__button button--cards" href="#">žiūrėti <i class="material-icons material-icons--margin">arrow_forward</i></a>
           </div>
         </div>
-      </section>
-      <section class="section section__stalai">
-        <div class="page__inner">
-          <h2 class="section__title">Stalai</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="stalai">
-            <div class="stalai__container">
-              <div class="stalai__photo stalai__photo--odd">
-                <img class="stalai__image--size" src="assets/table_1.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--even">
-                <img class="stalai__image--size" src="assets/table_2.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--odd stalai__photo--big stalai__photo--margin">
-                <img class="stalai__image--size" src="assets/table_3.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--even">
-                <img class="stalai__image--size" src="assets/table_4.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--odd">
-                <img class="stalai__image--size" src="assets/table_5.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--even stalai__photo--big">
-                <img class="stalai__image--size" src="assets/table_6.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--odd">
-                <img class="stalai__image--size" src="assets/table_7.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-                <a href="#"></a>
-              </div>
-              <div class="stalai__photo stalai__photo--even">
-                <img class="stalai__image--size" src="assets/table_8.jpeg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-              <div class="stalai__photo stalai__photo--odd stalai__photo--big">
-                <img class="stalai__image--size" src="assets/table_9.jpg" alt="">
-                <div class="filter">
-                  <a href="#" class="filter__choose">daugiau...</a>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="cards__container">
+        <div class="cards__photo">
+          <div class="cards__photo--filter">
+          </div>
+            <img class="cards__photo--style" src="https://media.istockphoto.com/photos/confident-female-doctor-at-office-desk-picture-id508387030?k=6&m=508387030&s=612x612&w=0&h=nxBwICODokliIjl5wP6-Hz8Cg7qZQyClIoKLHi3elfQ=" alt="">
+        </div>
+        <div class="cards__container--text">
+          <h5 class="cards__title">KLINIKOJE INMEDICA SATARIŠKĖS - GYDYTOJO ENDOKRINOLOGO KONSULTACIJA + SKYDLIAUKĖS ULTRAGARSINIS IŠTYRIMAS</h5>
+          <div class="cards__title--line"></div>
+          <p class="cards__text">Pasiūlymas galioja Sausio, Vasario, Kovo mėnesiais!</p>
+          <div class="cards__button">
+            <a  class="hero__button button--cards" href="#">žiūrėti <i class="material-icons material-icons--margin">arrow_forward</i></a>
           </div>
         </div>
-      </section>
-      <section class="section section__kedes">
-        <div class="page__inner">
-          <h2 class="section__title">Svetainės kėdės</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="kedes__gallery">
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_1.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_2.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_4.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_5.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_7.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_1.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_2.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_5.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_4.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_7.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_5.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-              <div class="kede__container">
-                <h3 class="kedes__title"> Kėdės pavadinimas</h3>
-                <div class="kede__photo">
-                  <img class="kede__photo--size" src="assets/chair_4.jpeg" alt="">
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">detaliau</a>
-                </div>
-                <div class="button">
-                  <a class="button--nostyle" href="#">pridėti į krepšelį</a>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="cards__container">
+        <div class="cards__photo cards__photo--reverse">
+          <div class="cards__photo--filter">
+          </div>
+            <img class="cards__photo--style" src="https://media.istockphoto.com/photos/confident-female-doctor-at-office-desk-picture-id508387030?k=6&m=508387030&s=612x612&w=0&h=nxBwICODokliIjl5wP6-Hz8Cg7qZQyClIoKLHi3elfQ=" alt="">
         </div>
-      </section>
-      <section class="section section__form">
-        <div class="page__inner page__inner--form">
-          <h2 class="section__title">Užsakyti naujienlaiškį</h2>
-          <form class="form" action="index.html" method="post">
-            <label class="form__label">
-              <span class="form__label--span">Jūsų vardas:</span>
-              <input class="form__input" type="text" name="name" placeholder="Vardas..." required>
-            </label>
-            <label class="form__label">
-              <span class="form__label--span">Jūsų el. paštas:</span>
-              <input class="form__input" type="email" name="mail" placeholder="example@mail.com" required>
-            </label>
-            <input class="button button--nostyle form__button--width" type="submit" name="" value="Užsakyti">
-          </form>
+        <div class="cards__container--text">
+          <h5 class="cards__title">INMEDICA KLINIKOJE SANTARIŠKĖSE IR KLINIKOJE ELITE MEDICALE - INDIVIDUALI KINEZITERAPINĖ MANKŠTA (5 KARTAI) - 108 EUR!</h5>
+          <div class="cards__title--line"></div>
+          <p class="cards__text">Pasiūlymas galioja Sausio, Vasario, Kovo mėnesiais!</p>
+          <div class="cards__button">
+            <a  class="hero__button button--cards" href="#">žiūrėti <i class="material-icons material-icons--margin">arrow_forward</i></a>
+          </div>
         </div>
-      </section>
-      <section class="section section__footer">
-        <div class="page__inner">
-          <a href="#" class="footer__title">Copyright &copy; 2019</a href="#">
+      </div>
+      <div class="cards__container">
+        <div class="cards__photo cards__photo--reverse">
+          <div class="cards__photo--filter">
+          </div>
+            <img class="cards__photo--style" src="https://media.istockphoto.com/photos/confident-female-doctor-at-office-desk-picture-id508387030?k=6&m=508387030&s=612x612&w=0&h=nxBwICODokliIjl5wP6-Hz8Cg7qZQyClIoKLHi3elfQ=" alt="">
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="cards__container--text">
+          <h5 class="cards__title">AKCIJA MOTERŲ IR VYRŲ PROFILAKTINIO IŠTYRIMO PAKETAMS!</h5>
+          <div class="cards__title--line"></div>
+          <p class="cards__text">Pasiūlymas galioja Sausio, Vasario, Kovo mėnesiais!</p>
+          <div class="cards__button">
+            <a  class="hero__button button--cards" href="#">žiūrėti <i class="material-icons material-icons--margin">arrow_forward</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="visos__naujienos">
+      <a class="visos__naujienos--style" href="#">visos naujienos <i class="material-icons material-icons--margin">arrow_forward</i></a>
+    </div>
+  </section>
+  <section class="section section__footer">
+    <div class="page__inner footer__grid footer--inner">
+      <div class="footer__grid--item">
+        <h5 class="footer__title">kontaktai</h5>
+        <p class="footer__text">Ozo g. 12 A, Vilnius</p>
+        <p class="footer__text">El. p.: info@inmedica.lt</p>
+        <p class="footer__text">Kontaktai: KLINIKŲ KONTAKTAI, ADMINISTRACIJOS KONTAKTAI</p>
+        <p class="footer__text">Įstaigos asmens sveikatos priežiūros licencija NR.2797</p>
+        <p class="footer__text">Įmonės kodas: 300011170</p>
+        <p class="footer__text">A/s LT487044060004064698</p>
+      </div>
+      <div class="footer__grid--item footer__inner__grid">
+        <div class="footer__inner__grid--item">
+          <h5 class="footer__title">Greitoji navigacija</h5>
+          <p class="footer__text">APIE MUS</p>
+          <p class="footer__text">Apmokejimas</p>
+          <p class="footer__text">Akcijos</p>
+        </div>
+        <div class="footer__inner__grid--item">
+          <p class="footer__text">PACIENTAMS</p>
+          <p class="footer__text">NAUJIENOS</p>
+        </div>
+      </div>
+      <div class="footer__grid--item">
+        <h5 class="footer__title">mes socialiniuose tinkluose</h5>
+        <div class="footer__social">
+          <div class="social__container">
+            <span class="footer__social--item"><a href="#" class="fa fa-facebook social__icon"></a></span>
+            <span class="footer__social--item"><a href="#" class="fa fa-twitter social__icon"></a></span>
+            <span class="footer__social--item"><a href="#" class="fa fa-linkedin social__icon"></a></span>
+          </div>
+          <img class="google_play" src="https://play.google.com/intl/en_us/badges/images/generic/lt_badge_web_generic.png" alt="google_play">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer__bottom">
+    <p class="footer__bottom--text">© 2017 Visos teisės saugomos. Sprendimas: UAB "Freshmedia"</p>
+  </div>
+  </main>
+</body>
 </html>
