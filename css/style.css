@@ -13,37 +13,58 @@
   margin:0;
 }
 .grid{
+  background-color: grey;
   display: grid;
-  grid: auto-flow 100px / 1fr 1fr 1fr 1fr;
+  grid: auto-flow 100px / 50px 1fr 1fr 1fr 1fr 50px;
   grid-template-areas:
-    'header header header header'
-    'sidebar content content content'
-    '. content content content'
-    'sidebarB content content content'
-    '. content content content'
-    'sidebarC content content content'
-    'footer footer footer footer'
+    'header header header header header header'
+    '. A B C D .'
+    '. E F C G .'
+    '. H K . G .'
+    '. H . . . .'
+    'footer footer footer footer footer footer'
     ;
+    grid-gap: 20px;
 }
 .header{
   grid-area: header;
   background-color: red;
 }
-.sidebar{
-  grid-area: sidebar;
+.A{
+  grid-area: A;
   background-color: purple;
 }
-.sidebarB{
-  grid-area: sidebarB;
+.B{
+  grid-area: B;
   background-color: green;
 }
-.sidebarC{
-  grid-area: sidebarC;
+.C{
+  grid-area: C;
   background-color: violet;
 }
-.content{
-  grid-area: content;
+.D{
+  grid-area: D;
   background-color: grey;
+}
+.E{
+  grid-area: E;
+  background-color: lightgrey;
+}
+.F{
+  grid-area: F;
+  background-color: brown;
+}
+.G{
+  grid-area: G;
+  background-color: pink;
+}
+.H{
+  grid-area: H;
+  background-color: violet;
+}
+.K{
+  grid-area: K;
+  background-color: red;
 }
 .footer{
   grid-area: footer;
