@@ -1,73 +1,45 @@
-*{
-  box-sizing: border-box;
+nav {
+  background-color: #6464c8;
+}
+
+footer {
+  background-color: blue;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error, .reset, .clear {
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+
+.reset {
+  color: white;
+  background-color: red;
+}
+
+.error {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+
+form button {
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  background-color: #2e4c1f;
   margin: 0;
 }
 
-/* :root {
-  --primary-color:#;
-  --secondary-color:#;
-} */
-/* header{ */
-  /* background:var(primary-color); */
-.page{
-  margin:0;
-}
-.grid{
-  background-color: grey;
-  display: grid;
-  grid: auto-flow 100px / 50px 1fr 1fr 1fr 1fr 50px;
-  grid-template-areas:
-    'header header header header header header'
-    '. A B C D .'
-    '. E F C G .'
-    '. H K . G .'
-    '. H . . . .'
-    'footer footer footer footer footer footer'
-    ;
-    grid-gap: 20px;
-}
-.header{
-  grid-area: header;
-  background-color: red;
-}
-.A{
-  grid-area: A;
-  background-color: purple;
-}
-.B{
-  grid-area: B;
-  background-color: green;
-}
-.C{
-  grid-area: C;
-  background-color: violet;
-}
-.D{
-  grid-area: D;
-  background-color: grey;
-}
-.E{
-  grid-area: E;
-  background-color: lightgrey;
-}
-.F{
-  grid-area: F;
-  background-color: brown;
-}
-.G{
-  grid-area: G;
-  background-color: pink;
-}
-.H{
-  grid-area: H;
-  background-color: violet;
-}
-.K{
-  grid-area: K;
-  background-color: red;
-}
-.footer{
-  grid-area: footer;
-  background-color: black;
-  color: white;
-}
+/*# sourceMappingURL=style.css.map */

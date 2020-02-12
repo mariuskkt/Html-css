@@ -1,0 +1,30 @@
+@use 'mixins' as *;
+
+%buttons {
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.clear {
+  @extend %buttons;
+}
+.reset {
+  @extend %buttons;
+  color: white;
+  background-color: red;
+}
+
+.error {
+  @extend %buttons;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+form button{
+  background: white;
+  border: 1px solid black;
+  @include rounded;
+  @include size(200px);
+}

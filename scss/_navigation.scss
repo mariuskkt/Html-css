@@ -1,0 +1,5 @@
+@use 'variables' as variables;
+
+nav{
+  background-color: variables.$secondary-color;
+}

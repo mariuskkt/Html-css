@@ -1,0 +1,10 @@
+@use 'variables' as variables;
+@use 'navigation';
+@use 'footer';
+@use 'mixins' as *;
+@use 'button' as *;
+
+body{
+  background-color: variables.$primary-color;
+  margin: 0;
+}
